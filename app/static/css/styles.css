@@ -95,14 +95,14 @@ li a:hover {
 }
 
 /* Priority Colors */
-li[data-priority="L1"] {
+li[data-priority="Low"] {
     border-left: 5px solid #28a745;
 }
 
-li[data-priority="L2"] {
+li[data-priority="Medium"] {
     border-left: 5px solid #ffc107;
 }
 
-li[data-priority="L3"] {
+li[data-priority="High"] {
     border-left: 5px solid #dc3545;
 }

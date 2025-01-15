@@ -12,9 +12,9 @@
     <form action="/add" method="POST">
         <input type="text" name="task" placeholder="Task" required>
         <select name="priority">
-            <option value="L1">L1</option>
-            <option value="L2">L2</option>
-            <option value="L3">L3</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
         </select>
         <input type="date" name="date" required>
         <button type="submit">Add</button>
@@ -24,9 +24,9 @@
     <form action="/" method="GET">
         <select name="priority">
             <option value="">All Priorities</option>
-            <option value="L1" {% if priority == "L1" %}selected{% endif %}>L1</option>
-            <option value="L2" {% if priority == "L2" %}selected{% endif %}>L2</option>
-            <option value="L3" {% if priority == "L3" %}selected{% endif %}>L3</option>
+            <option value="Low" {% if priority == "Low" %}selected{% endif %}>Low</option>
+            <option value="Medium" {% if priority == "Medium" %}selected{% endif %}>Medium</option>
+            <option value="High" {% if priority == "High" %}selected{% endif %}>High</option>
         </select>
         <input type="date" name="date" value="{{ date }}">
         <button type="submit">Filter</button>
