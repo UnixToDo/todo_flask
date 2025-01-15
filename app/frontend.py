@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect
 import requests
 
 app = Flask(__name__)
-API_BASE = "http://api:5000"
+API_BASE = "http://api:3000"
 
 @app.route("/")
 def home():
@@ -40,5 +40,5 @@ def delete_todo(todo_id):
     return redirect("/")
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001)
+    app.run(host="0.0.0.0", port=3001)
 

@@ -18,7 +18,7 @@ def get_todos():
         query["date"] = date
 
     # Define the custom priority order
-    priority_order = {"L1": 1, "L2": 2, "L3": 3}
+    priority_order = {"Low": 1, "Medium": 2, "High": 3}
 
     # Fetch and sort todos by priority
     result = [
@@ -48,4 +48,4 @@ def delete_todo(todo_id):
     return jsonify({"message": "Todo deleted"})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=3000)
