@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
-    <title>Edit Todo</title>
+    <title>Edit Task</title>
 </head>
 <body>
-    <h1>Edit Todo</h1>
+    <h1>Edit Task</h1>
     <form action="/update/{{ todo._id }}" method="POST">
         <input type="text" name="task" value="{{ todo.task }}" required>
         <select name="priority">
